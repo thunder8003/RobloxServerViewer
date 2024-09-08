@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/RobloxServerViewer/static/css/main.e4e07945.css",
+    "main.js": "/RobloxServerViewer/static/js/main.f175cd3a.js",
+    "index.html": "/RobloxServerViewer/index.html",
+    "main.e4e07945.css.map": "/RobloxServerViewer/static/css/main.e4e07945.css.map",
+    "main.f175cd3a.js.map": "/RobloxServerViewer/static/js/main.f175cd3a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4e07945.css",
+    "static/js/main.f175cd3a.js"
+  ]
+}
