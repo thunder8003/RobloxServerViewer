@@ -38,7 +38,7 @@ function App() {
     async function FetchData() {
       setLoading(true)
       try {
-        const res = await fetch(`http://localhost:8080/${gameID}`)
+        const res = await fetch(`https://test.teslasemi.workers.dev/?GameID=${gameID}`, {method: 'get', mode: "cors", headers: {'accept': 'application/json'}})
 
         if (res.ok) {
           const json: ResData = (await res.json()) as ResData
