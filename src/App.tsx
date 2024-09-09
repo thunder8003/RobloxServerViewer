@@ -44,8 +44,7 @@ function App() {
     async function FetchData() {
       setLoading(true)
       try {
-        // const res = await fetch(`https://test.teslasemi.workers.dev/?GameID=${gameID}`, {method: 'get', mode: "cors", headers: {'accept': 'application/json'}})
-        const res = await fetch(`http://127.0.0.1:8787/?GameID=${gameID}&SortOrder=${ascending ? 'Asc' : 'Desc'}&ExcludeFullGames=${excludeFull}`, {method: 'get', mode: "cors", headers: {'accept': 'application/json'}})
+        const res = await fetch(`https://test.teslasemi.workers.dev/?GameID=${gameID}&SortOrder=${ascending ? 'Asc' : 'Desc'}&ExcludeFullGames=${excludeFull}`, {method: 'get', mode: "cors", headers: {'accept': 'application/json'}})
         if (res.ok) {
           const json: ResData = (await res.json()) as ResData
           setResData(json)
